@@ -5,7 +5,7 @@ import { Socials } from "./Socials";
 export const HeroSection = () => {
   const t = useTranslations("heroSection");
   return (
-    <section className="mt-8">
+    <section className="mt-16">
       <div className="grid sm:grid-cols-2">
         <div className="flex flex-col gap-5 justify-between">
           <div className="flex flex-col gap-4">
