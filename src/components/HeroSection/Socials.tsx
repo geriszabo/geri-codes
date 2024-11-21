@@ -17,7 +17,7 @@ export const Socials = () => {
             <Phone className="cursor-pointer "/>
         </PopoverTrigger>
         <PopoverContent className="flex justify-center w-fit rounded-full" >
-            <Link href="tel:+36205748584">{"+36/20 - 574 - 8584"}</Link>
+            <Link className="font-bold " href="tel:+36205748584">{"+36/20 - 574 - 8584"}</Link>
         </PopoverContent>
       </Popover>
     </div>
