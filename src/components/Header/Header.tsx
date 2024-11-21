@@ -10,7 +10,7 @@ interface HeaderItem {
 export const Header = () => {
   const t = useTranslations("header");
   return (
-    <header>
+    <header className="sticky top-0 bg-background/80 backdrop-blur-lg">
       <nav className="flex items-center justify-between ">
         <ul className="flex justify-between gap-4">
           {headerItems.map((headerItem) => (
