@@ -5,6 +5,7 @@ import { Calistoga, Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Header } from "@/components/Header/Header";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -32,7 +33,9 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${calistoga.variable} ${inter.variable} antialiased`}>
+      <body
+        className={`mx-auto in-h-screen max-w-3xl px-8 ${calistoga.variable} ${inter.variable} antialiased`}
+      >
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
             attribute="class"
@@ -40,6 +43,7 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <Header />
             {children}
           </ThemeProvider>
         </NextIntlClientProvider>
