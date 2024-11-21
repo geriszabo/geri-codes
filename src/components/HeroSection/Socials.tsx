@@ -7,7 +7,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { useTranslations } from "next-intl";
+import { Typography } from "../Typography";
 
 interface SocialInterface {
   name: string;
@@ -16,31 +16,33 @@ interface SocialInterface {
 }
 
 export const Socials = () => {
-    const t = useTranslations("HeroSection.socials")
   return (
     <div className="flex gap-4">
       {socialContacts.map((social) => (
         <Link key={social.name} href={social.href}>
-          {" "}
           <social.icon strokeWidth={2} />{" "}
         </Link>
       ))}
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger>
-      <Popover>
-        <PopoverTrigger asChild>
-          <Phone className="cursor-pointer " />
-        </PopoverTrigger>
-        <PopoverContent className="flex justify-center w-fit rounded-full">
-          <Link className="font-bold " href="tel:+36205748584">
-            {"+36/20 - 574 - 8584"}
-          </Link>
-        </PopoverContent>
-      </Popover>
-      </TooltipTrigger>
+            <Popover>
+              <PopoverTrigger asChild>
+                <Phone className="cursor-pointer " />
+              </PopoverTrigger>
+              <PopoverContent className="flex justify-center w-fit h-fit rounded-full">
+                <Link className="text-xs " href="tel:+36205748584">
+                  {"+36/20 - 574 - 8584"}
+                </Link>
+              </PopoverContent>
+            </Popover>
+          </TooltipTrigger>
           <TooltipContent>
-            <p>{t("whatsappTooltip")}</p>
+            <Typography
+              namespacePath="heroSection.socials"
+              text="whatsappTooltip"
+              variant="paragraph"
+            />
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>

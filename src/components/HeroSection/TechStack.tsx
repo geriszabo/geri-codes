@@ -10,6 +10,7 @@ import {
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { Badge } from "../ui/badge";
+import { Typography } from "../Typography";
 
 interface TechStackInterface {
   name: string;
@@ -17,10 +18,8 @@ interface TechStackInterface {
 }
 
 export const TechStack = () => {
-  const t = useTranslations("techStack");
   return (
     <section className="mt-12">
-      <h1 className="text-2xl">{t("title")}</h1>
       <ul className="flex flex-wrap gap-5 mt-4 sm:max-w-[60%]">
         {techStackItems.map((tech) => (
           <li key={tech.name}>

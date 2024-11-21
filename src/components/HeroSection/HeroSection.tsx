@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Socials } from "./Socials";
+import { Typography } from "../Typography";
 
 export const HeroSection = () => {
   const t = useTranslations("heroSection");
@@ -9,7 +10,7 @@ export const HeroSection = () => {
       <div className="grid sm:grid-cols-2">
         <div className="flex flex-col gap-5 justify-between">
           <div className="flex flex-col gap-4">
-            <h1 className="text-5xl">{t("title")}</h1>
+            <Typography namespacePath="heroSection" variant="title" text="title"/>
             <p>
               {t.rich("introduction", {
                 br: () => <br></br>,
