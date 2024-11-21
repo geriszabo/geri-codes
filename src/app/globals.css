@@ -3,10 +3,9 @@
 @tailwind utilities;
 
 body {
-  font-family: var(--font-sans), Helvetica, sans-serif;
+  font-family: var(--font-montserrat), Helvetica, sans-serif;
   background-image: radial-gradient(circle, #ddd 1px, transparent 1px);
   background-size: 20px 20px; /* Adjust the size for the spacing between dots */
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .dark body {
