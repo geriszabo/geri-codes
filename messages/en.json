@@ -1,15 +1,25 @@
 {
-  "Header": {
+  "header": {
     "home": "home",
     "about": "about me",
     "work": "work",
     "projects": "projects"
   },
-  "HeroSection": {
+  "heroSection": {
     "title": "hey, i'm gergö",
     "introduction": "i am a javascript developer based in hungary. <br></br>i love to code and to learn new stuff. <br></br><strong>i like dogs too.</strong>",
     "socials": {
       "whatsappTooltip": "i use whatsapp"
     }
+  },
+  "techStack": {
+    "title": "techstack",
+    "typescript": "typescript",
+    "javascript": "javascript",
+    "react": "react",
+    "next.js": "next.js",
+    "node.js": "node.js",
+    "mongodb": "mongodb",
+    "prisma": "prisma"
   }
 }

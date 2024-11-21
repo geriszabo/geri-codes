@@ -8,7 +8,7 @@ interface HeaderItem {
 }
 
 export const Header = () => {
-  const t = useTranslations("Header");
+  const t = useTranslations("header");
   return (
     <header>
       <nav className="flex items-center justify-between ">

@@ -1,11 +1,11 @@
 import { HeroSection } from "@/components/HeroSection/HeroSection";
-import { Socials } from "@/components/HeroSection/Socials";
+import { TechStack } from "@/components/HeroSection/TechStack";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <Socials/>
+      <TechStack />
     </>
   );
 }
