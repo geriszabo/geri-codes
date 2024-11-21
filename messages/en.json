@@ -7,6 +7,9 @@
   },
   "HeroSection": {
     "title": "hey, i'm gergö",
-    "introduction": "i am a javascript developer based in hungary. <br></br>i love to code and to learn new stuff. <br></br><strong>i like dogs too.</strong>"
+    "introduction": "i am a javascript developer based in hungary. <br></br>i love to code and to learn new stuff. <br></br><strong>i like dogs too.</strong>",
+    "socials": {
+      "whatsappTooltip": "i use whatsapp"
+    }
   }
 }
