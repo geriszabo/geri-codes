@@ -1,4 +1,3 @@
-import { useTranslations } from "next-intl";
 import { IconType } from "react-icons/lib";
 import {
   SiTypescript,
@@ -10,7 +9,6 @@ import {
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { Badge } from "../ui/badge";
-import { Typography } from "../Typography";
 
 interface TechStackInterface {
   name: string;
@@ -50,11 +48,11 @@ const techStackItems: TechStackInterface[] = [
     icon: FaReact,
   },
   {
-    name: "next.js",
+    name: "nextjs",
     icon: SiNextdotjs,
   },
   {
-    name: "node.js",
+    name: "nodejs",
     icon: SiNodedotjs,
   },
   {
