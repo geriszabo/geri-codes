@@ -20,7 +20,6 @@ export const HeroSection = () => {
           </div>
           <Socials />
         </div>
-        {/* TODO: resize image */}
         <Image
           className="col-span-2 hidden sm:block rounded-full filter contrast-125"
           src="/image.png"

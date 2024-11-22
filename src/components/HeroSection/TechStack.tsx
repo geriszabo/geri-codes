@@ -18,10 +18,10 @@ interface TechStackInterface {
 export const TechStack = () => {
   return (
     <section className="mt-12">
-      <ul className="flex flex-wrap gap-5 mt-4 sm:max-w-[60%]">
+      <ul className="flex flex-wrap gap-3 mt-4 sm:max-w-[60%]">
         {techStackItems.map((tech) => (
           <li key={tech.name}>
-            <Badge variant="secondary" className="flex items-center gap-2 px-4 py-1">
+            <Badge variant="secondary" className="flex items-center gap-2 px-4">
               <span>
                 <tech.icon className="text-lg" />
               </span>
