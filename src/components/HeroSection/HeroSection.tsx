@@ -22,7 +22,7 @@ export const HeroSection = () => {
         </div>
         {/* TODO: resize image */}
         <Image
-          className="col-span-2 hidden sm:block rounded-full filter contrast-125 justify-self-center"
+          className="col-span-2 hidden sm:block rounded-full filter contrast-125"
           src="/image.png"
           width={180}
           height={180}
