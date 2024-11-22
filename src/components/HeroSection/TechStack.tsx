@@ -17,7 +17,7 @@ interface TechStackInterface {
 
 export const TechStack = () => {
   return (
-    <section className="mt-12">
+    <section className="mt-6">
       <ul className="flex flex-wrap gap-3 mt-4 sm:max-w-[60%]">
         {techStackItems.map((tech) => (
           <li key={tech.name}>

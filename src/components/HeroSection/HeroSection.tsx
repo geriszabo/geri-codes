@@ -8,7 +8,7 @@ export const HeroSection = () => {
   return (
     <section>
       <div className="grid sm:grid-cols-5">
-        <div className="col-span-3 flex flex-col gap-5 justify-between">
+        <div className="col-span-3 flex flex-col gap-10 justify-between">
           <div className="flex flex-col gap-4">
             <Typography namespacePath="heroSection" variant="title" text="title"/>
             <p>
@@ -18,7 +18,7 @@ export const HeroSection = () => {
               })}
             </p>
           </div>
-          <Socials />
+          <Socials/>
         </div>
         <Image
           className="col-span-2 hidden sm:block rounded-full filter contrast-125"
