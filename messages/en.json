@@ -142,7 +142,6 @@
         "description": "my personal website",
         "image": "/projects/geri-codes.png",
         "github": "https://github.com/geriszabo/geri-codes",
-        "site": "",
         "features": ["mostly me 🌝"],
         "technologies": ["Next.js", "React", "Typescript", "Shadcn"]
       },

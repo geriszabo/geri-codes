@@ -31,7 +31,7 @@ export default function ProjectsPage() {
       />
       <div className="grid grid-cols-2 gap-4">
         {projects.map((project) => {
-          const { description, features, technologies, title, image, site } =
+          const { description, features, technologies, title, image, site, github } =
             project;
 
           return (
@@ -64,17 +64,17 @@ export default function ProjectsPage() {
                 </CardContent>
                 <CardFooter className="flex gap-2">
                   <Button size="sm" asChild>
-                    <Link target="_blank" href={site}>
+                    <Link target="_blank" href={github}>
                       <Github className="size-3" />
                       github
                     </Link>
                   </Button>
-                  <Button size="sm" asChild>
+                 { site && <Button size="sm" asChild>
                     <Link target="_blank" href={site}>
                       <Chrome />
                       site
                     </Link>
-                  </Button>
+                  </Button>}
                 </CardFooter>
               </Card>
             </article>
