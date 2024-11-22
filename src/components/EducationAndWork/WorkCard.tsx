@@ -1,9 +1,4 @@
-import {
-  Card,
-  CardHeader,
-  CardDescription,
-  CardContent,
-} from "../ui/card";
+import { Card, CardHeader, CardDescription, CardContent } from "../ui/card";
 import translation from "../../../messages/en.json";
 import Image from "next/image";
 import { Typography, TypographyProps } from "../Typography";
@@ -33,10 +28,15 @@ export const WorkCard = () => {
             startDate,
             technologies,
           } = job;
+          console.log(key);
           return (
             <article key={key} className="grid grid-cols-5 gap-4">
               <Image
-                className="hidden sm:block col-span-1 mt-1 drop-shadow-4xl"
+                className={`hidden sm:block col-span-1 mt-1 ${
+                  //i totally hate this but the company logos
+                  //are not visible in dark mode and i dont want to change images
+                  (key === "audi" || key === "accenture") && "drop-shadow-4xl" 
+                }`}
                 src={logo}
                 width={100}
                 height={100}

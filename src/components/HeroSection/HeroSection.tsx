@@ -7,8 +7,8 @@ export const HeroSection = () => {
   const t = useTranslations("heroSection");
   return (
     <section className="mt-16">
-      <div className="grid sm:grid-cols-2">
-        <div className="flex flex-col gap-5 justify-between">
+      <div className="grid sm:grid-cols-5">
+        <div className="col-span-3 flex flex-col gap-5 justify-between">
           <div className="flex flex-col gap-4">
             <Typography namespacePath="heroSection" variant="title" text="title"/>
             <p>
@@ -22,7 +22,7 @@ export const HeroSection = () => {
         </div>
         {/* TODO: resize image */}
         <Image
-          className="hidden sm:block rounded-full filter contrast-125"
+          className="col-span-2 hidden sm:block rounded-full filter contrast-125 justify-self-center"
           src="/image.png"
           width={180}
           height={180}
