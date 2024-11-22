@@ -36,7 +36,7 @@ export const WorkCard = () => {
             return (
               <article key={key} className="grid grid-cols-5 gap-4">
                 <Image
-                  className="col-span-1 mt-1"
+                  className="col-span-1 mt-1 drop-shadow-4xl"
                   src={logo}
                   width={100}
                   height={100}
