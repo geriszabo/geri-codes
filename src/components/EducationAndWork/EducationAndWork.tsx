@@ -12,7 +12,7 @@ import { WorkCard } from "./WorkCard";
 export const EducationAndWork = () => {
 
   return (
-    <section className="mt-12">
+    <section className="mt-12 flex flex-col gap-4 mb-10">
       <Typography
         namespacePath="educationAndWork"
         variant="subtitle"
