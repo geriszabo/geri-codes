@@ -6,7 +6,6 @@ import translation from "../../../messages/en.json";
 
 export const EducationAndWork = () => {
   const { jobs, education } = translation.educationAndWork;
-  console.log(education);
   return (
     <section className="mt-12 flex flex-col gap-4 mb-10">
       <Typography
