@@ -28,5 +28,5 @@ export const Typography = ({
       </h1>
     );
   }
-  return <p className={`${className}`}>{t(text)}</p>;
+  return <p className={`${className}`}>{t.rich(text, {br: () => <br></br>})}</p>;
 };
