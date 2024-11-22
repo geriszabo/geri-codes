@@ -31,11 +31,11 @@ const headerItems: HeaderItem[] = [
     href: "/",
   },
   {
-    name: "about",
-    href: "/about",
-  },
-  {
     name: "projects",
     href: "/projects",
+  },
+  {
+    name: "about",
+    href: "/about",
   },
 ];

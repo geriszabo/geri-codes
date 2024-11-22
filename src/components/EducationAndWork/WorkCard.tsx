@@ -1,6 +1,6 @@
 import { Card, CardHeader, CardContent } from "../ui/card";
 import Image from "next/image";
-import { Typography, TypographyProps } from "../Typography";
+import { Typography, TypographyPropCollection } from "../Typography";
 import { Badge } from "../ui/badge";
 
 
@@ -21,7 +21,7 @@ interface Job {
  } 
 
 export const WorkCard = ({jobs}: WorkCardProps) => {
-  const typographyProps: Omit<TypographyProps, "text"> = {
+  const typographyProps: TypographyPropCollection= {
     namespacePath: "educationAndWork",
     variant: "paragraph",
     className: "font-bold mb-2",

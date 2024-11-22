@@ -1,12 +1,14 @@
 import { useTranslations } from "next-intl";
 import { HTMLProps } from "react";
 
-export interface TypographyProps {
+interface TypographyProps {
   variant: "title" | "subtitle" | "paragraph";
   namespacePath: string;
   text: string;
   className?: HTMLProps<HTMLElement>["className"];
 }
+
+export type TypographyPropCollection = Omit<TypographyProps, "text">
 
 export const Typography = ({
   namespacePath,

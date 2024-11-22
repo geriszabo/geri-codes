@@ -14,7 +14,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Typography, TypographyProps } from "../Typography";
+import { Typography, TypographyPropCollection } from "../Typography";
 import { Button } from "../ui/button";
 
 interface SocialInterface {
@@ -24,7 +24,7 @@ interface SocialInterface {
 }
 
 export const Socials = () => {
-  const typographyProps: Omit<TypographyProps, "text"> = {
+  const typographyProps: TypographyPropCollection = {
     namespacePath: "heroSection.socials",
     variant: "paragraph",
   };
