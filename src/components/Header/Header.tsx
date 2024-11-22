@@ -35,10 +35,6 @@ const headerItems: HeaderItem[] = [
     href: "/about",
   },
   {
-    name: "work",
-    href: "/work",
-  },
-  {
     name: "projects",
     href: "/projects",
   },
