@@ -1,4 +1,11 @@
-import { Github, Linkedin, LucideIcon, Mail, Phone } from "lucide-react";
+import {
+  ArrowDownToLine,
+  Github,
+  Linkedin,
+  LucideIcon,
+  Mail,
+  Phone,
+} from "lucide-react";
 import Link from "next/link";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import {
@@ -7,7 +14,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Typography } from "../Typography";
+import { Typography, TypographyProps } from "../Typography";
+import { Button } from "../ui/button";
 
 interface SocialInterface {
   name: string;
@@ -16,8 +24,19 @@ interface SocialInterface {
 }
 
 export const Socials = () => {
+  const typographyProps: Omit<TypographyProps, "text"> = {
+    namespacePath: "heroSection.socials",
+    variant: "paragraph",
+  };
+
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-4 items-center">
+      <Button asChild>
+        <a href="/cv.pdf" download >
+        <Typography {...typographyProps} text="cv" />
+        <ArrowDownToLine />
+        </a>
+      </Button>
       {socialContacts.map((social) => (
         <Link key={social.name} href={social.href}>
           <social.icon strokeWidth={2} />{" "}
@@ -38,11 +57,7 @@ export const Socials = () => {
             </Popover>
           </TooltipTrigger>
           <TooltipContent>
-            <Typography
-              namespacePath="heroSection.socials"
-              text="whatsappTooltip"
-              variant="paragraph"
-            />
+            <Typography {...typographyProps} text="whatsappTooltip" />
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
