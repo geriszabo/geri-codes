@@ -28,7 +28,6 @@ export const WorkCard = () => {
             startDate,
             technologies,
           } = job;
-          console.log(key);
           return (
             <article key={key} className="grid grid-cols-5 gap-4">
               <Image
