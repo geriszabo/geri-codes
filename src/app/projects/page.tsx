@@ -29,14 +29,14 @@ export default function ProjectsPage() {
         text="title"
         variant="title"
       />
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {projects.map((project) => {
           const { description, features, technologies, title, image, site, github } =
             project;
 
           return (
             <article key={title}>
-              <Card className="flex flex-col h-full">
+              <Card className="mx-auto flex flex-col h-full max-w-sm">
                 <CardHeader>
                   <CardTitle>{title}</CardTitle>
                   <CardDescription>{description}</CardDescription>
