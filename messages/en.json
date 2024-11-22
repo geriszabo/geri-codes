@@ -2,7 +2,6 @@
   "header": {
     "home": "home",
     "about": "about me",
-    "work": "work",
     "projects": "projects"
   },
   "heroSection": {
@@ -23,6 +22,9 @@
     "prisma": "prisma"
   },
   "educationAndWork": {
+    "responsibilities": "my main responsibilities:",
+    "languages": "work language:",
+    "techs": "technologies i used:",
     "title": "education & work",
     "tabs": {
       "education": {
@@ -37,7 +39,7 @@
     "jobs": {
       "zurich": {
         "company": "Zurich Insurance Group",
-        "location": "Vienna",
+        "location": "Vienna 🇦🇹",
         "role": "Frontend Developer",
         "logo": "/logos/zurich.png",
         "startDate": "August 2023",
@@ -66,7 +68,7 @@
       },
       "veeva": {
         "company": "Veeva Systems Kft.",
-        "location": "Budapest",
+        "location": "Budapest 🇭🇺",
         "role": "Frontend Developer",
         "logo": "/logos/veeva.png",
         "startDate": "January 2023",
@@ -84,7 +86,7 @@
       },
       "accenture": {
         "company": "Accenture Hungary Kft.",
-        "location": "Budapest",
+        "location": "Budapest 🇭🇺",
         "role": "Software Developer",
         "logo": "/logos/accenture.png",
         "startDate": "November 2022",
@@ -96,7 +98,39 @@
         ],
         "languages": ["English", "Hungarian"],
         "technologies": ["JavaScript", "HTML", "CSS"]
+      },
+      "audi": {
+        "company": "Audi Hungaria Zrt.",
+        "location": "Györ 🇭🇺",
+        "role": "Process Developer",
+        "logo": "/logos/audi.png",
+        "startDate": "April 2016",
+        "endDate": "November 2022",
+        "responsibilities": [
+          "Development and maintenance of organizational processes",
+          "Supervision of organizational unit in following areas: preparation of decision making, consulting",
+          "Conducting internal audits / audit preparation"
+        ],
+        "languages": ["Hungarian", "English"],
+        "technologies": [],
+        "database": []
       }
+    },
+    "education": {
+      "bootcampsAndCourses": [
+        {
+          "title": "Bootcamps, Courses, Continuous Learning",
+          "timePeriod": "2020 – today",
+          "description": "Besides on the job trainings, I am regularly doing off the job courses on my own for my personal development. These courses thematize full stack projects, frontend frameworks, UI libraries, animations, databases, etc."
+        }
+      ],
+      "formalEducation": [
+        {
+          "institution": "West-Hungarian University",
+          "timePeriod": "January 2009 – April 2013",
+          "description": "Bachelors degree in Andragogy"
+        }
+      ]
     }
   }
 }
