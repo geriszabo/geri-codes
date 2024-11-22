@@ -1,11 +1,26 @@
-import { Card, CardHeader, CardDescription, CardContent } from "../ui/card";
-import translation from "../../../messages/en.json";
+import { Card, CardHeader, CardContent } from "../ui/card";
 import Image from "next/image";
 import { Typography, TypographyProps } from "../Typography";
 import { Badge } from "../ui/badge";
 
-export const WorkCard = () => {
-  const { jobs } = translation.educationAndWork;
+
+interface Job {
+  company: string;
+  location: string;
+  role: string;
+  logo: string;
+  startDate: string;
+  endDate: string;
+  responsibilities: string[];
+  languages: string[];
+  technologies: string[];
+  testingLibraries?: string[]
+}
+ interface WorkCardProps{
+  jobs: Record<string, Job>
+ } 
+
+export const WorkCard = ({jobs}: WorkCardProps) => {
   const typographyProps: Omit<TypographyProps, "text"> = {
     namespacePath: "educationAndWork",
     variant: "paragraph",
@@ -14,7 +29,6 @@ export const WorkCard = () => {
   return (
     <Card className="max-h-[50vh] overflow-auto ">
       <CardHeader>
-        <CardDescription className="space-y-10"></CardDescription>
       </CardHeader>
       <CardContent className="space-y-10 text-sm">
         {Object.entries(jobs).map(([key, job]) => {

@@ -26,7 +26,7 @@
     "responsibilities": "my main responsibilities:",
     "languages": "work language:",
     "techs": "technologies i used:",
-    "title": "education & work",
+    "title": "work & education",
     "tabs": {
       "education": {
         "title": "education",
@@ -118,20 +118,16 @@
       }
     },
     "education": {
-      "bootcampsAndCourses": [
-        {
-          "title": "Bootcamps, Courses, Continuous Learning",
-          "timePeriod": "2020 – today",
-          "description": "Besides on the job trainings, I am regularly doing off the job courses on my own for my personal development. These courses thematize full stack projects, frontend frameworks, UI libraries, animations, databases, etc."
-        }
-      ],
-      "formalEducation": [
-        {
-          "institution": "West-Hungarian University",
-          "timePeriod": "January 2009 – April 2013",
-          "description": "Bachelors degree in Andragogy"
-        }
-      ]
+      "bootcampsAndCourses": {
+        "title": "Bootcamps, Courses, Continuous Learning",
+        "timePeriod": "2020 – today",
+        "description": "Besides on the job trainings, I am regularly doing off the job courses on my own for my personal development. These courses thematize full stack projects, frontend frameworks, UI libraries, animations, databases, etc."
+      },
+      "formalEducation": {
+        "title": "West-Hungarian University",
+        "timePeriod": "January 2009 – April 2013",
+        "description": "Bachelors degree in Andragogy"
+      }
     }
   }
 }

@@ -1,16 +1,12 @@
 import { Typography } from "../Typography";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { WorkCard } from "./WorkCard";
+import { EducationCard } from "./EducationCard";
+import translation from "../../../messages/en.json";
 
 export const EducationAndWork = () => {
-
+  const { jobs, education } = translation.educationAndWork;
+  console.log(education);
   return (
     <section className="mt-12 flex flex-col gap-4 mb-10">
       <Typography
@@ -36,18 +32,10 @@ export const EducationAndWork = () => {
           </TabsTrigger>
         </TabsList>
         <TabsContent value="work">
-        <WorkCard/>
+          <WorkCard jobs={jobs} />
         </TabsContent>
         <TabsContent value="education">
-          <Card>
-            <CardHeader>
-              <CardTitle></CardTitle>
-              <CardDescription>
-                text education
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-2"></CardContent>
-          </Card>
+          <EducationCard education={education} />
         </TabsContent>
       </Tabs>
     </section>
