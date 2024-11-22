@@ -129,5 +129,57 @@
         "description": "Bachelors degree in Andragogy"
       }
     }
+  },
+  "projects": {
+    "title": "my latest projects",
+    "cards": {
+      "feat": "features:",
+      "tech": "tech used:"
+    },
+    "projects": [
+      {
+        "title": "gergö codes",
+        "description": "my personal website",
+        "image": "/projects/geri-codes.png",
+        "github": "https://github.com/geriszabo/geri-codes",
+        "site": "",
+        "features": [
+         "mostly me 🌝"
+        ],
+        "technologies": [
+          "Next.js",
+          "React",
+          "Typescript",
+          "Shadcn"
+        ]
+      },
+      {
+        "title": "home away",
+        "description": "an airbnb clone i made with next.js",
+        "image": "/projects/home-away.png",
+        "github": "https://github.com/geriszabo/airbnbclone/tree/main",
+        "site": "https://geriszabo-airbnbclone.vercel.app",
+        "features": [
+          "user authentication",
+          "payment integration",
+          "user profiles",
+          "booking system",
+          "search function",
+          "data validation",
+          "admin interface"
+        ],
+        "technologies": [
+          "Next.js",
+          "React",
+          "Typescript",
+          "Shadcn",
+          "Zod",
+          "PostgreSQL",
+          "Prisma",
+          "Stripe",
+          "Clerk"
+        ]
+      }
+    ]
   }
 }
