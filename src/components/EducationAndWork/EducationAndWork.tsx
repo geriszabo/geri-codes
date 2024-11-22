@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { WorkCard } from "./WorkCard";
 
 export const EducationAndWork = () => {
 
@@ -35,16 +36,7 @@ export const EducationAndWork = () => {
           </TabsTrigger>
         </TabsList>
         <TabsContent value="work">
-       
-          <Card>
-            <CardHeader>
-              <CardTitle></CardTitle>
-              <CardDescription>
-                text work
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-2"></CardContent>
-          </Card>
+        <WorkCard/>
         </TabsContent>
         <TabsContent value="education">
           <Card>
