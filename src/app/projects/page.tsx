@@ -56,8 +56,8 @@ export default function ProjectsPage() {
                   <div className="flex flex-col gap-2">
                     <Typography {...typographyProps} text="tech" />
                     <ul className="flex flex-wrap gap-2">
-                      {technologies.map((tech) => (
-                        <Badge variant="secondary">{tech}</Badge>
+                      {technologies.map((tech, index) => (
+                        <Badge key={index} variant="secondary">{tech}</Badge>
                       ))}
                     </ul>
                   </div>
