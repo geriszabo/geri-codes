@@ -6,7 +6,7 @@ import { Typography } from "../Typography";
 export const HeroSection = () => {
   const t = useTranslations("heroSection");
   return (
-    <section className="mt-16">
+    <section>
       <div className="grid sm:grid-cols-5">
         <div className="col-span-3 flex flex-col gap-5 justify-between">
           <div className="flex flex-col gap-4">
