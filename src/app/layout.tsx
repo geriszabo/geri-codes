@@ -36,7 +36,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`mx-auto in-h-screen max-w-4xl px-8 ${calistoga.variable} ${montserrat.variable} antialiased`}
+        className={` ${calistoga.variable} ${montserrat.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
@@ -46,7 +46,7 @@ export default async function RootLayout({
             disableTransitionOnChange
           >
             <Header />
-            <main className="mt-16">{children}</main>
+            <main className="mx-auto in-h-screen mt-16 max-w-4xl px-8 ">{children}</main>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
