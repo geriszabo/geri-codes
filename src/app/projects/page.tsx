@@ -47,7 +47,7 @@ export default function ProjectsPage() {
                     width={250}
                     height={250}
                     alt="project"
-                    className="object-fill h-48 w-96"
+                    className=" w-full"
                   />
                   <div className="flex-flex-col gap-2 my-4">
                     <Typography  {...typographyProps} text="feat" />
