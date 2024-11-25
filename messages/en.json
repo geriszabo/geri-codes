@@ -178,5 +178,11 @@
     "title": "hello there",
     "me": "i'm gergö', a web developer from hungary. i started studying web design during covid, but somehow ended up learning how to code. <br></br> i got pretty lucky with this, i love what i do. i speak english, german and hungarian of course, so if we meet somewhere in europe, chances are pretty good we understand eachother.",
     "hobby": "when i'm not working then i'm probably learning, doing sports orh iking somewhere warm."
+  },
+  "notFound": {
+    "code": "404",
+    "title": "you're not supposed to be here",
+    "subtitle": "let's take you home",
+    "button": "🏠 click here"
   }
 }
