@@ -32,7 +32,7 @@ export const Socials = () => {
   return (
     <div className="flex gap-4 items-center">
       <Button asChild>
-        <a href="/cv.pdf" download >
+        <a href="/gergoe.szabo.webdev.cv.pdf" download >
         <Typography {...typographyProps} text="cv" />
         <ArrowDownToLine />
         </a>
