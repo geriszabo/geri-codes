@@ -14,12 +14,22 @@ import Image from "next/image";
 import { Chrome, Github } from "lucide-react";
 import Link from "next/link";
 
+interface ProjectType {
+  title: string;
+  description: string;
+  image: string;
+  github: string;
+  features: string[];
+  technologies: string[];
+  site?: string;
+}
+
 export default function ProjectsPage() {
   const { projects } = data.projects;
   const typographyProps: TypographyPropCollection = {
     namespacePath: "projects.cards",
     variant: "paragraph",
-    className: "font-bold"
+    className: "font-bold",
   };
   return (
     <section>
@@ -30,9 +40,16 @@ export default function ProjectsPage() {
         variant="title"
       />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {projects.map((project) => {
-          const { description, features, technologies, title, image, site, github } =
-            project;
+        {projects.map((project: ProjectType) => {
+          const {
+            description,
+            features,
+            technologies,
+            title,
+            image,
+            site,
+            github,
+          } = project;
 
           return (
             <article key={title}>
@@ -50,14 +67,16 @@ export default function ProjectsPage() {
                     className=" w-full"
                   />
                   <div className="flex-flex-col gap-2 my-4">
-                    <Typography  {...typographyProps} text="feat" />
+                    <Typography {...typographyProps} text="feat" />
                     {features.join(", ")}
                   </div>
                   <div className="flex flex-col gap-2">
                     <Typography {...typographyProps} text="tech" />
                     <ul className="flex flex-wrap gap-2">
                       {technologies.map((tech, index) => (
-                        <Badge key={index} variant="secondary">{tech}</Badge>
+                        <Badge key={index} variant="secondary">
+                          {tech}
+                        </Badge>
                       ))}
                     </ul>
                   </div>
@@ -69,12 +88,14 @@ export default function ProjectsPage() {
                       github
                     </Link>
                   </Button>
-                 { site && <Button size="sm" asChild>
-                    <Link target="_blank" href={site}>
-                      <Chrome />
-                      site
-                    </Link>
-                  </Button>}
+                  {site && (
+                    <Button size="sm" asChild>
+                      <Link target="_blank" href={site}>
+                        <Chrome />
+                        site
+                      </Link>
+                    </Button>
+                  )}
                 </CardFooter>
               </Card>
             </article>
