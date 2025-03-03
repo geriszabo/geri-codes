@@ -38,6 +38,31 @@
       }
     },
     "jobs": {
+      "marshmallow": {
+        "company": "Marshmallow Insurance",
+        "location": "Budapest 🇭🇺",
+        "role": "Frontend Developer",
+        "logo": "/logos/marshmallow.png",
+        "startDate": "February 2025",
+        "endDate": "Today",
+        "responsibilities": [
+          "Development of backoffice portal for employees",
+          "Implementation of new features and components",
+          "Resolving bugs",
+          "Development of end-to-end UI tests and unit tests",
+          "Code refactorings, to improve performance"
+        ],
+        "languages": ["English"],
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Styled Components",
+          "CSS",
+          "Zod",
+          "Redux Toolkit"
+        ],
+        "testingLibraries": ["Playwright", "Vitest"]
+      },
       "zurich": {
         "company": "Zurich Insurance Group",
         "location": "Vienna 🇦🇹",
@@ -150,7 +175,6 @@
         "description": "an airbnb clone i made with next.js",
         "image": "/projects/home-away.png",
         "github": "https://github.com/geriszabo/airbnbclone/tree/main",
-        "site": "https://geriszabo-airbnbclone.vercel.app",
         "features": [
           "user authentication",
           "payment integration",
