@@ -48,7 +48,7 @@ export const WorkCard = ({jobs}: WorkCardProps) => {
                 className={`hidden sm:block col-span-1 mt-1 ${
                   //i totally hate this but the company logos
                   //are not visible in dark mode and i dont want to change images
-                  (key === "audi" || key === "accenture") && "drop-shadow-4xl" 
+                  (key === "audi" || key === "accenture" || key === "marshmallow") && "drop-shadow-4xl" 
                 }`}
                 src={logo}
                 width={100}
